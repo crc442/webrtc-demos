@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web-RTC demo 1</title>
+</head>
+<body>
+    <script type="text/javascript">
+        navigator.wekitGetUserMedia({video.true}, yaayyo, faillo);
+
+        yaayyo = function ( stream ) {
+            var mediaobject = webkitURL.createObjectURL(stream);
+
+            thevedio.src = mediaobject; 
+        }
+    </script>
+
+    <video id="thevedio" autoplay="autoplay"></video>
+</body>
+</html>
